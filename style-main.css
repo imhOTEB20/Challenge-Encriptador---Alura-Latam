@@ -1,0 +1,103 @@
+:root {
+    --color-fondo: rgb(242, 245, 252);
+    --color-fondo2: #FFFFFF;
+    --color-fuente: #0A3871;
+    --color-fuente2: rgb(242, 245, 252);
+    --color-fuente3: #D8DFE8;
+
+    --tipografia: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--color-fondo);
+}
+header{
+    height: 40px;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+main{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+}
+.caja_de_texto{
+    display: inline-flex;
+    flex-grow: 1;
+    position: fixed;
+    left: 240px;
+    top: 168px;
+    margin: 0 40px;
+}.caja_de_texto form{
+    width: 100%;
+    flex-grow: 1;
+}
+#campo_de_texto{
+    background-color: #0A3871;
+    color: var(--color-fuente);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 677px;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-family: var(--tipografia);
+    margin-bottom: 40px;
+}
+#campo_de_texto::placeholder{
+    color: var(--color-fuente);
+}
+.caja_botones{
+    width: 680px;
+    height: 67px;
+}
+.botones{
+    width: 328px;
+    height: 100%;
+    border: 1px solid var(--color-fuente);
+    border-radius: 24px;
+}
+#btn-encriptar{
+    font-family: var(--tipografia);
+    background-color: var(--color-fuente);
+    color: var(--color-fuente3);
+}
+#btn-desencriptar{
+    font-family: var(--tipografia);
+    background-color: var(--color-fuente3);
+    color: var(--color-fuente);
+}
+.caja_resultado{
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--color-fondo2);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 944px;
+    width: 400px;
+    margin-right: 40px;
+    position: fixed;
+    right: 0;
+}
+.caja_resultado img{
+    width: 336px;
+    height: 304px;
+}
+.resultado{
+    width: 336px;
+}
+.caja_resultado h3{
+    font-family: var(--tipografia);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 12px;
+}
+.caja_resultado p{
+    font-family: var(--tipografia);
+    font-size: 16px;
+    margin-top: 24px;
+}
