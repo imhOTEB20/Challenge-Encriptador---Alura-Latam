@@ -4,6 +4,7 @@
     --color-fuente: #0A3871;
     --color-fuente2: rgb(242, 245, 252);
     --color-fuente3: #D8DFE8;
+    --color-fuente4: #495057;
 
     --tipografia: 'Inter', sans-serif;
 }
@@ -103,8 +104,15 @@ main{
     font-size: 24px;
     margin: 12px;
 }
-.caja_resultado p{
+.caja_resultado .consejo{
     font-family: var(--tipografia);
     font-size: 16px;
     margin-top: 24px;
+}
+.caja_resultado .texto_resultado{
+    font-family: var(--tipografia);
+    color: var(--color-fuente4);
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 36px;
 }

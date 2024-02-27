@@ -13,7 +13,7 @@
     </header>
     <main>
         <div class="caja_de_texto">
-            <form action="">
+            <form id="formulario">
                 <textarea name="campo_de_texto" id="campo_de_texto" placeholder="Ingresa el texto aqui"></textarea>
                 <div class="caja_botones">
                     <input id="btn-encriptar" class="botones" type="submit" value="Encriptar">
@@ -21,13 +21,14 @@
                 </div>
             </form>
         </div>
-        <div class="caja_resultado">
+        <div class="caja_resultado" id="caja_r">
             <img src="img/Muñeco.png" alt="">
             <div class="resultado">
                 <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="consejo">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
         </div>
     </main>
+    <script src="script-main.js"></script>
 </body>
 </html>
