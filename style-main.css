@@ -5,6 +5,7 @@
     --color-fuente2: rgb(242, 245, 252);
     --color-fuente3: #D8DFE8;
     --color-fuente4: #495057;
+    --color-fuente5: #868E96;
 
     --tipografia: 'Inter', sans-serif;
 }
@@ -49,10 +50,26 @@ main{
     display: flex;
     margin-bottom: 40px;
     margin-top: 128px;
+    line-height: 48px;
 }
 #campo_de_texto::placeholder{
     color: var(--color-fuente);
     margin-right: 40px;
+}
+.contenedor_msg_error{
+    height: 18px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.contenedor_msg_error p{
+    font-size: 12px;
+    line-height: 18px;
+    font-family: var(--tipografia);
+    color: var(--color-fuente5);
+}
+.contenedor_msg_error img{
+    margin-right: 8px;
 }
 .caja_botones{
     display: flex;
@@ -94,9 +111,15 @@ main{
 .caja_resultado img{
     width: 336px;
     height: 304px;
+    margin: 0 32px 32px 32px;
 }
 .resultado{
     width: 336px;
+}
+.contenedor_texto_resultado{
+    margin: 0 32px 32px 32px;
+    width: 336px;
+    height: 781px;
 }
 .caja_resultado h3{
     font-family: var(--tipografia);
@@ -115,4 +138,15 @@ main{
     font-size: 24px;
     margin-top: 18px;
     line-height: 36px;
+}
+#btn_copiar{
+    width: 336px;
+    height: 67px;
+    border: 1px solid var(--color-fuente);
+    color: var(--color-fuente);
+    background-color: var(--color-fondo2);
+    border-radius: 24px;
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--tipografia);
 }
