@@ -30,10 +30,10 @@ function desencriptar(texto){
     let textoDesencriptado = texto;
 
     for (const CLAVE in REEMPLAZOS){
-        if (REEMPLAZOS.hasOwnProperty(CLAVE)) {
-            const VOCAL = REEMPLAZOS[CLAVE];
-            textoDesencriptado = textoDesencriptado.replace(CLAVE, VOCAL);
-        }
+        alert(`${CLAVE} -> ${REEMPLAZOS[CLAVE]}`);
+        let patron = new RegExp(CLAVE, 'g');
+        textoDesencriptado = textoDesencriptado.replace(patron, REEMPLAZOS[CLAVE]);
+        alert(`texto -> ${textoDesencriptado}`);
     }
     return textoDesencriptado;
 }
@@ -128,7 +128,6 @@ function transformar(tipo){
                     <p class="consejo">Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>`;
             }else{
-                alert("pase por aqui");
                 let msgInfo = document.getElementById('msg_info');
                 msgInfo.textContent = 'Ningún mensaje fue encontrado';
             }
