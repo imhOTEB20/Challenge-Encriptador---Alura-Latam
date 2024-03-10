@@ -30,10 +30,8 @@ function desencriptar(texto){
     let textoDesencriptado = texto;
 
     for (const CLAVE in REEMPLAZOS){
-        alert(`${CLAVE} -> ${REEMPLAZOS[CLAVE]}`);
         let patron = new RegExp(CLAVE, 'g');
         textoDesencriptado = textoDesencriptado.replace(patron, REEMPLAZOS[CLAVE]);
-        alert(`texto -> ${textoDesencriptado}`);
     }
     return textoDesencriptado;
 }
