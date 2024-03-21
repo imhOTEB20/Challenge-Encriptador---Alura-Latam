@@ -37,7 +37,7 @@ function desencriptar(texto){
 }
 
 function validarTexto(texto){
-    const EXPRESIONR = /^[a-z\s]+$/u;
+    const EXPRESIONR = /^[a-zñ\s]+$/u;
     return EXPRESIONR.test(texto);
 }
 
